@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Secret Burger Sauce - About</title>
+<style>
+  /* Same styles as index.html */
+  * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    animation: fadeIn 1s ease forwards;
+  }
+  header {
+    background: #d94f27;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #ffbb99;
+  }
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s forwards 0.5s;
+  }
+  h2 {
+    color: #d94f27;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    color: #999;
+    border-top: 1px solid #eee;
+    margin-top: 3rem;
+    animation: fadeIn 1.5s ease forwards 1s;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Secret Burger Sauce</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="signin.html">Sign In</a>
+    </nav>
+  </header>
+  <main>
+    <h2>About Our Sauce</h2>
+    <p>
+      At Secret Burger Sauce Co., we’re passionate about crafting the perfect sauce for burger lovers everywhere.
+      Our secret recipe combines rich, smoky, and tangy flavors designed to enhance every bite.
+    </p>
+    <p>
+      Made with all-natural ingredients, no preservatives, and a lot of love.
+      We take pride in quality and taste.
+    </p>
+    <p>
+      Stay tuned for new products, recipes, and exclusive deals.
+    </p>
+  </main>
+  <footer>
+    &copy; 2025 Secret Burger Sauce Co. All rights reserved.
+  </footer>
+</body>
+</html>
