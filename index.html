@@ -3,108 +3,124 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Secret Burger Sauce - About</title>
+<title>Secret Burger Sauce</title>
 <style>
-  /* Same styles as index.html */
-  * {
+  /* Reset and base */
+  *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0; padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   body {
-    background: #fff8f0;
+    margin: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fafafa;
     color: #333;
-    line-height: 1.6;
-    font-size: 16px;
-    animation: fadeIn 1s ease forwards;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   header {
-    background: #d94f27;
+    background-color: #d94f00;
     color: white;
-    padding: 2rem 1rem;
+    padding: 1.5rem 2rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: 2px;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-  nav a:hover {
-    color: #ffbb99;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 2px 6px rgba(217, 79, 0, 0.5);
   }
   main {
-    max-width: 700px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slideUp 1s forwards 0.5s;
+    flex-grow: 1;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
   }
-  h2 {
-    color: #d94f27;
-    margin-bottom: 1rem;
+  h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 0.25rem;
+    color: #bf4a00;
   }
-  p {
-    font-size: 1.1rem;
+  p.description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
     color: #555;
-    margin-bottom: 1.5rem;
+  }
+  .product-image {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(217, 79, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  .product-image:hover {
+    transform: scale(1.05);
+  }
+  button.buy-now {
+    background-color: #d94f00;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(217, 79, 0, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  button.buy-now:hover,
+  button.buy-now:focus {
+    background-color: #b24000;
+    outline: none;
   }
   footer {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-size: 0.9rem;
+    background: #f0f0f0;
     color: #999;
-    border-top: 1px solid #eee;
-    margin-top: 3rem;
-    animation: fadeIn 1.5s ease forwards 1s;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    text-align: center;
   }
-
-  /* Animations */
+  /* Fade-in */
+  main {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.3s;
+  }
   @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  @keyframes slideUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    to { opacity: 1; }
   }
 </style>
 </head>
 <body>
-  <header>
-    <h1>Secret Burger Sauce</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="signin.html">Sign In</a>
-    </nav>
-  </header>
-  <main>
-    <h2>About Our Sauce</h2>
-    <p>
-      At Secret Burger Sauce Co., we’re passionate about crafting the perfect sauce for burger lovers everywhere.
-      Our secret recipe combines rich, smoky, and tangy flavors designed to enhance every bite.
-    </p>
-    <p>
-      Made with all-natural ingredients, no preservatives, and a lot of love.
-      We take pride in quality and taste.
-    </p>
-    <p>
-      Stay tuned for new products, recipes, and exclusive deals.
-    </p>
-  </main>
-  <footer>
-    &copy; 2025 Secret Burger Sauce Co. All rights reserved.
-  </footer>
+  <nav style="text-align:right; margin: 10px;">
+    <a href="signin.html" style="text-decoration:none; font-weight:bold; color:#d94f00;">Sign In</a>
+  </nav>
+<header>
+  Secret Burger Sauce
+</header>
+<main>
+  <h1>The Secret You’ve Been Waiting For</h1>
+  <img
+    src="https://media.istockphoto.com/id/1427205106/photo/classic-burger-sauce-in-the-bowl-isolated.jpg?s=612x612&w=0&k=20&c=XXpM4McrU3SFJOGK1kgbf8x7fgzqa6pc-HaJyYuAvig="
+    alt="Secret Burger Sauce Bottle"
+    class="product-image"
+  />
+  <p class="description">
+    Unlock the flavor that takes your burgers from ordinary to legendary. Our secret sauce is a unique blend of smoky, tangy, and spicy goodness — made from a recipe no one else has.
+  </p>
+  <button
+    class="buy-now"
+    onclick="alert('Thank you for your interest! Our store is coming soon.')"
+  >
+    Buy Now
+  </button>
+</main>
+<footer>
+  &copy; 2025 Secret Burger Sauce Co. All rights reserved.
+</footer>
 </body>
+</html>
+
 </html>
